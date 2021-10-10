@@ -1,4 +1,4 @@
-  body,
+        body,
         div {
             margin: 0;
             padding: 0;
@@ -23,10 +23,25 @@
             background-color: #87e8de;
         }
         
+        .main_big {
+            width: 100%;
+            height: 50px;
+            margin-top: 200px;
+            float: left;
+        }
+        
+        .main_foot {
+            margin-top: 100px;
+            width: 100%;
+            height: 100px;
+            float: left;
+        }
+        
         .one {
             width: 50px;
             height: 50px;
-            background-color: red;
+            background-image: url(./img/tou.jpg);
+            background-size: 56px;
             border: 1px solid black;
             border-radius: 100px;
             position: absolute;
@@ -34,109 +49,85 @@
             animation-name: onece;
             animation-duration: 3s;
             animation-iteration-count: 1;
-            animation-delay: 1s;
         }
         
         @keyframes onece {
             0% {
                 margin-left: 800px;
-                margin-top: 300px;
-            }
-            50% {
-                margin-left: 400px;
-                margin-top: 150px;
-                border-radius: 0px;
-                background-color: fuchsia;
+                transform: rotate(360deg);
+                display: none;
             }
             100% {
                 margin-left: 20px;
-                margin-top: 20px;
-                border-radius: 100px;
-                background-color: gold;
+                transform: rotate(0deg);
+                display: block;
             }
         }
         
         .two {
-            width: 50px;
+            width: 150px;
             height: 50px;
-            background-color: deeppink;
-            border: 1px solid black;
+            font-size: 37px;
             position: absolute;
-            margin: 20px;
+            margin-left: 530px;
+            color: #1890ff;
             animation-name: twoce;
             animation-iteration-count: 1;
-            animation-duration: 3s;
-            animation-delay: 4s;
+            animation-duration: 2s;
         }
         
         @keyframes twoce {
             0% {
-                margin-left: 10px;
-                border-bottom-width: 20px;
+                margin-left: -20px;
+                transform: rotate(0deg);
             }
             100% {
-                margin-left: 500px;
-                border-bottom-width: 50px;
-                border-bottom-color: deepskyblue;
+                margin-left: 530px;
+                transform: rotate(360deg);
+                color: #1890ff;
             }
         }
         
         .three {
-            width: 200px;
-            height: 60px;
-            background-color: deeppink;
-            border: 1px solid black;
-            text-align: center;
+            width: 330px;
+            height: 50px;
             position: absolute;
-            margin-top: 150px;
-            margin-left: 20px;
+            margin-left: 682px;
+            font-size: 37px;
+            color: #1890ff;
             animation-name: threece;
             animation-iteration-count: 1;
-            animation-duration: 3s;
-            animation-delay: 7s;
+            animation-duration: 2s;
         }
         
         @keyframes threece {
             0% {
-                margin-left: 20px;
-                font-weight: bold;
-                text-indent: 0px;
-                margin-left: 500px;
-                box-shadow: 5px 10px 20px blue;
+                margin-left: 1500px;
+                transform: rotate(0deg);
             }
             100% {
-                font-weight: 400;
-                text-indent: 100px;
-                margin-left: 20px;
-                box-shadow: 10px 20px 30px pink;
+                margin-left: 682px;
+                transform: rotate(360deg);
+                color: #1890ff;
             }
         }
         
         .four {
-            width: 150px;
-            height: 100px;
-            background-color: purple;
-            margin-top: 300px;
-            margin-left: 20px;
+            width: 100%;
+            height: 200px;
             position: absolute;
             animation-name: fource;
             animation-iteration-count: 1;
             animation-duration: 3s;
-            animation-delay: 10s;
+            column-width: 400px;
         }
         
         @keyframes fource {
             0% {
-                transform: rotate(0deg);
-                border-top-right-radius: 0px;
-                border-bottom-left-radius: 0px;
-                margin-left: 20px;
+                column-width: 100px;
             }
             100% {
-                margin-left: 200px;
-                transform: rotate(360deg);
-                border-top-right-radius: 50px;
-                border-bottom-left-radius: 50px;
+                column-width: 400px;
             }
         }
         
@@ -163,16 +154,10 @@
             width: 50px;
             height: 30px;
             margin: 20px;
-            /* border: 1px solid black; */
             float: right;
             animation-name: sixce;
             animation-iteration-count: 1;
             animation-duration: 3s;
-        }
-        
-        @keyframes sixce {
-            0% {}
-            100% {}
         }
         
         .box {
