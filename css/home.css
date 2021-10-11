@@ -112,8 +112,6 @@ li {
     width: 100%;
     margin-top: 25px;
     font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
     cursor: pointer;
 }
 
@@ -153,4 +151,5 @@ h2 div {
 
 .m_b_l_s_o div {
     margin-top: 15px;
+    cursor: pointer;
 }
