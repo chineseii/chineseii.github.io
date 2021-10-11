@@ -97,8 +97,13 @@ h3 {
 .main-big_left {
     width: 75%;
     height: 590px;
+<<<<<<< HEAD
     padding-right: 20px;
     box-shadow: 1px 1px 1px #f5f5f5;
+=======
+    border-right: 1px solid black;
+    padding-right: 20px;
+>>>>>>> 347feb4526e3c83fe83455384b9d77957c472f32
 }
 
 .main-big_right {
@@ -186,5 +191,9 @@ h2 div {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+<<<<<<< HEAD
     margin-top: 5px;
 }
+=======
+}
+>>>>>>> 347feb4526e3c83fe83455384b9d77957c472f32
