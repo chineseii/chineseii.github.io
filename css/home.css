@@ -1,25 +1,32 @@
 body,
 div,
 ul,
-li {
+li,
+h1,
+h2,
+h3 {
     margin: 0;
     padding: 0;
 }
 
+:root {
+    -h: 200px;
+}
+
 .top {
     width: 100%;
-    height: 200px;
+    height: var(--h);
     background-color: #036fde;
 }
 
-.top_big {
+.top-big {
     width: 62%;
     height: 200px;
     margin: auto;
     display: flex;
 }
 
-.t_b_l {
+.top-big_left {
     width: 75%;
     height: 200px;
     display: flex;
@@ -28,26 +35,26 @@ li {
     color: white;
 }
 
-.t_b_r {
+.top-big_right {
     width: 25%;
     height: 200px;
 }
 
-.l-t {
+.left-top {
     width: 100%;
     height: 100px;
     font-size: 60px;
     line-height: 100px;
 }
 
-.l-f {
+.left-bottom {
     width: 100%;
     height: 100px;
     font-size: 20px;
     line-height: 100px;
 }
 
-.r_b {
+.right-big {
     width: 90%;
     height: 80px;
     border: 3px solid white;
@@ -56,12 +63,12 @@ li {
     display: flex;
 }
 
-.r_b_l {
+.right-big_left {
     width: 30%;
     height: 80px;
 }
 
-.r_b_r {
+.right-big_right {
     width: 70%;
     height: 80px;
     display: flex;
@@ -69,25 +76,32 @@ li {
     color: white;
 }
 
-.main {
+.right-big_right div {
     width: 100%;
-    height: 590px;
+    height: 40px;
+    line-height: 40px;
 }
 
-.main_b {
+.main {
+    width: 100%;
+    height: calc(100vh - var(--h));
+}
+
+.main-big {
     width: 62%;
     height: 590px;
     margin: auto;
     display: flex;
 }
 
-.m_b_l {
+.main-big_left {
     width: 75%;
     height: 590px;
-    border-right: 1px solid black;
+    padding-right: 20px;
+    box-shadow: 1px 1px 1px #f5f5f5;
 }
 
-.m_b_r {
+.main-big_right {
     width: 25%;
     height: 590px;
 }
@@ -103,26 +117,23 @@ li {
     margin-bottom: 10px;
 }
 
-.m-b-l-o {
+.big-left_one {
     width: 100%;
-    height: 80px;
+    height: 30px;
 }
 
-.m-b-l-o div {
+.big-left_one div {
     width: 100%;
     margin-top: 25px;
     font-size: 14px;
     cursor: pointer;
 }
 
-.m_b_l_o_t {
-    color: blue;
-}
-
 h1,
 h2,
 h3 {
     font-weight: normal;
+    margin-top: 10px;
 }
 
 h2 div {
@@ -131,19 +142,20 @@ h2 div {
     height: 50px
 }
 
-.m_b_l_t {
+.big-left_two {
     width: 100%;
     height: 110px;
     font-size: 14px;
 }
 
-.m_b_l_t div {
+.big-left_two div {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 .m_b_l_s {
@@ -152,13 +164,14 @@ h2 div {
     font-size: 14px;
 }
 
-.m_b_l_s_o div {
+.m_b_l_s div {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 .m_b_l_f {
@@ -173,4 +186,5 @@ h2 div {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    margin-top: 5px;
 }
