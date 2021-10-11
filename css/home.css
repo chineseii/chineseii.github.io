@@ -152,7 +152,7 @@ h2 div {
     font-size: 14px;
 }
 
-.m_b_l_s_o {
+.m_b_l_s_o div {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -161,12 +161,16 @@ h2 div {
     cursor: pointer;
 }
 
-.m_b_l_f div {
+.m_b_l_f {
     margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.m_b_l_f div {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    cursor: pointer;
 }
