@@ -1,0 +1,25 @@
+.change {
+    animation: ceshi 1s;
+}
+
+@keyframes ceshi {
+    from {
+        left: -999px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.gai {
+    animation: gai1 1s;
+}
+
+@keyframes gai1 {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
