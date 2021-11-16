@@ -11,7 +11,7 @@ const stylesHandler = isProduction ?
     "style-loader";
 
 const conf = getConfig({
-    modules: ['index', 'home', 'grid', 'zhi', 'task'] //新增模块
+    modules: ['index', 'home', 'grid', 'zhi',] //新增模块
 });
 
 const config = {

@@ -1,5 +1,5 @@
 import arti from '../../src/article_route'
-import Markdown from '../../accets/js/Markdown'
+import Markdown from '../../assets/js/Markdown'
 
 class Url {
     constructor(props) {

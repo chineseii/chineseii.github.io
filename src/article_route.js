@@ -40,29 +40,4 @@ export default [{
         // title: '',
         article: HTMLparse(article6)
     },
-    {
-        id: 7,
-        // title: '',
-        article: HTMLparse(article1)
-    },
-    {
-        id: 8,
-        // title: '',
-        article: HTMLparse(article2)
-    },
-    {
-        id: 9,
-        // title: '',
-        article: HTMLparse(article3)
-    },
-    {
-        id: 10,
-        // title: '',
-        article: HTMLparse(article4)
-    },
-    {
-        id: 11,
-        // title: '',
-        article: HTMLparse(article5)
-    },
 ]

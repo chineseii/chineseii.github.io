@@ -1,4 +1,4 @@
-import { Translate, Ani, Opicity, Anima, Animate, } from '../../accets/js/Anio';
+import { Translate, Ani, Opicity, Anima, Animate, } from '../../assets/js/Anio';
 
 // var ani = new Ani({
 //     el: document.querySelector('.big-left_two'),
