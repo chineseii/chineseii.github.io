@@ -40,3 +40,8 @@ function handleAnimation() {
     })
 }
 handleAnimation()
+document.querySelectorAll('.six').forEach(element => {
+    element.onclick = function() {
+        window.location.href = 'home.html?';
+    }
+})
