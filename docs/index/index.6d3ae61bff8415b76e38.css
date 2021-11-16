@@ -1,0 +1,177 @@
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+.top {
+  width: 100%;
+  height: 100px;
+  background-color: #87e8de;
+  position: relative;
+}
+.main {
+  width: 100%;
+  height: 520px;
+  background-color: #36cfc9;
+}
+.foot {
+  width: 100%;
+  height: 170px;
+  background-color: #87e8de;
+}
+.main_big {
+  width: 100%;
+  height: 50px;
+  margin-top: 200px;
+  float: left;
+}
+.main_foot {
+  margin-top: 100px;
+  width: 100%;
+  height: 100px;
+  float: left;
+}
+.one {
+  width: 50px;
+  height: 50px;
+  background-image: url(../f6da7dca8e81056cea4d.jpg);
+  background-size: 56px;
+  border: 1px solid black;
+  border-radius: 100px;
+  position: absolute;
+  margin: 20px;
+  /* animation-name: onece; */
+  /* animation-duration: 3s; */
+  /* animation-iteration-count: 1; */
+}
+.changeo {
+  animation: onece 3s alternate both;
+}
+@keyframes onece {
+  0% {
+    margin-left: 800px;
+    transform: rotate(360deg);
+    display: none;
+  }
+  100% {
+    margin-left: 20px;
+    transform: rotate(0deg);
+    display: block;
+  }
+}
+.two {
+  width: 150px;
+  height: 50px;
+  font-size: 37px;
+  position: absolute;
+  margin-left: 530px;
+  color: #1890ff;
+  /* animation-name: twoce;
+    animation-duration: 2s; */
+  /* animation-iteration-count: 1; */
+}
+.changet {
+  animation: twoce 2s alternate both;
+}
+@keyframes twoce {
+  0% {
+    margin-left: -20px;
+    transform: rotate(0deg);
+  }
+  100% {
+    margin-left: 530px;
+    transform: rotate(360deg);
+    color: #1890ff;
+  }
+}
+.three {
+  width: 330px;
+  height: 50px;
+  position: absolute;
+  margin-left: 682px;
+  font-size: 37px;
+  color: #1890ff;
+  /* animation-name: threece;
+    animation-duration: 2s; */
+  animation-iteration-count: 1;
+}
+.changeth {
+  animation: threece 2s alternate both;
+}
+@keyframes threece {
+  0% {
+    margin-left: 1500px;
+    transform: rotate(0deg);
+  }
+  100% {
+    margin-left: 682px;
+    transform: rotate(360deg);
+    color: #1890ff;
+  }
+}
+.four {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  /* animation-name: fource;
+    animation-duration: 3s; */
+  animation-iteration-count: 1;
+  column-width: 400px;
+}
+.changef {
+  animation: fource 3s alternate both;
+}
+@keyframes fource {
+  0% {
+    column-width: 100px;
+  }
+  100% {
+    column-width: 400px;
+  }
+}
+.five {
+  width: 250px;
+  height: 100px;
+  margin: 20px;
+  position: absolute;
+  /* animation-name: fivece;
+    animation-duration: 3s; */
+  animation-iteration-count: infinite;
+}
+.changefi {
+  animation: fivece 3s alternate both;
+}
+@keyframes fivece {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+.six {
+  width: 50px;
+  height: 30px;
+  margin: 20px;
+  float: right;
+  animation-name: sixce;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+.box {
+  width: 100%;
+  animation-name: donghua;
+  animation-duration: 3s;
+  position: absolute;
+  animation-fill-mode: forwards;
+  /*不出来*/
+}
+@keyframes donghua {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-900px);
+  }
+}
+

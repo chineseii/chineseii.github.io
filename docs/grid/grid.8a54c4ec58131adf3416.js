@@ -1,0 +1,1 @@
+(()=>{"use strict";(()=>{class t{constructor(e){this.el=t.el}static create(){return new t}static el;use(t){try{this.model=t.install}catch(e){t()}return this}mount(e){t.el=e,this.model().exec()}}class e extends t{constructor(){super()}exec(){this.el.classList.add("change")}static install(){return new e}}t.create().use(e).mount(document.querySelector(".big-left_two"))})()})();
