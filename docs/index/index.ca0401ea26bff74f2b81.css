@@ -18,7 +18,7 @@ div {
   background-image: url(../f6da7dca8e81056cea4d.jpg);
   background-size: 250px;
   border-radius: 1000px;
-  position: absolute;
+  float: left;
   margin: 100px;
   animation-name: onece;
   animation-duration: 4s;
@@ -37,10 +37,12 @@ div {
   }
 }
 .two {
+  width: 900px;
   font-size: 50px;
   position: absolute;
   color: #006d75;
   margin: 85px 460px;
+  float: left;
 }
 .three {
   position: absolute;
