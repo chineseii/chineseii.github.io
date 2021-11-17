@@ -114,14 +114,18 @@ class Ellipsis {
     }
 }
 
-let ellipsis = new Ellipsis({
-    el: document.querySelectorAll('.content')[0],
-    textCount: 145,
-    findAllButtonText: "查看",
-    showFindAllButton: true
-})
-
-ellipsis.exec();
+implement()
+function implement(){
+    for(var i=0; i<document.querySelectorAll('.content').length; i++){
+        let ellipsis = new Ellipsis({
+            el: document.querySelectorAll('.content')[i],
+            textCount: 145,
+            findAllButtonText: "查看",
+            showFindAllButton: true
+        })
+        ellipsis.exec();
+    }
+}
 
 document.querySelectorAll('.title').forEach(element => {
     element.onclick = function() {
