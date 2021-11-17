@@ -1,0 +1,1 @@
+document.getElementsByClassName("three")[0].onclick=function(){document.getElementById("auto").setAttribute("class","box"),window.location.href="home.html"};

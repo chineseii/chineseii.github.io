@@ -1,47 +1,44 @@
-document.getElementsByClassName('six')[0].onclick = function() {
+document.getElementsByClassName('three')[0].onclick = function() {
     document.getElementById('auto').setAttribute('class', 'box')
+    window.location.href = 'home.html';
 }
+
 
 // document.querySelector('.one').addEventListener('animationend', function(e) {
 //     console.log(e);
 //     console.log("动画已经结束");
 // })
 
-var targets = [{
-        el: document.querySelector('.one'),
-        animationClassName: 'changeo'
-    },
-    {
-        el: document.querySelector('.two'),
-        animationClassName: 'changet'
-    },
-    {
-        el: document.querySelector('.three'),
-        animationClassName: 'changeth'
-    },
-    {
-        el: document.querySelector('.four'),
-        animationClassName: 'changef'
-    },
-    {
-        el: document.querySelector('.five'),
-        animationClassName: 'changefi'
-    },
-]
+// var targets = [{
+//         el: document.querySelector('.one'),
+//         animationClassName: 'changeo'
+//     },
+//     {
+//         el: document.querySelector('.two'),
+//         animationClassName: 'changet'
+//     },
+//     {
+//         el: document.querySelector('.three'),
+//         animationClassName: 'changeth'
+//     },
+//     {
+//         el: document.querySelector('.four'),
+//         animationClassName: 'changef'
+//     },
+//     {
+//         el: document.querySelector('.five'),
+//         animationClassName: 'changefi'
+//     },
+// ]
 
-function handleAnimation() {
-    if (!targets.length) return;
-    console.log(targets);
-    var target = targets.shift();
-    target.el.classList.add(target.animationClassName);
-    target.el.addEventListener('animationend', function(e) {
-        console.log("动画执行结束");
-        handleAnimation()
-    })
-}
-handleAnimation()
-document.querySelectorAll('.six').forEach(element => {
-    element.onclick = function() {
-        window.location.href = 'home.html?';
-    }
-})
+// function handleAnimation() {
+//     if (!targets.length) return;
+//     console.log(targets);
+//     var target = targets.shift();
+//     target.el.classList.add(target.animationClassName);
+//     target.el.addEventListener('animationend', function(e) {
+//         console.log("动画执行结束");
+//         handleAnimation()
+//     })
+// }
+// handleAnimation()
